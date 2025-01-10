@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="stats-container">
+            <div class="details">
+                <h1>To-do App</h1>
+                <p>Success is the sum of small efforts, repeated day in and day out</p>
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="stats-number">
+                <p id="numbers"> 0 / 0 </p>
+            </div>
+        </div>
+
+        <form>
+            <input type="text" id="taskInput" placeholder="Write Your Objective">
+            <button id="newTask" type="submit">+</button>
+        </form>
+
+        <ul id="task-list" class="task-list"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
