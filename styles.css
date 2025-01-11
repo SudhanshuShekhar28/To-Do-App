@@ -64,7 +64,6 @@ body{
     background-color: var(--teal);
     border-radius: 10px;
     transition: all 0.3 ease;
-
     animation: colorChange 5s infinite;
 }
 
