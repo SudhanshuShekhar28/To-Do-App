@@ -28,14 +28,14 @@ body{
     max-width: 500px;
 }
 .stats-container {
-    padding: 30px;
-    border-radius: 20px;
-    border: 2px solid var(--purple);
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    width: 100%;
-    animation: borderColorChange 5s infinite; 
+     padding: 30px; 
+     border-radius: 20px; 
+     border: 2px solid var(--purple); 
+     display: flex; 
+     justify-content: space-between; 
+     gap: 50px; 
+     width: 100%; 
+     animation: borderColorChange 5s infinite; 
     } 
      @keyframes borderColorChange { 
         0% { border-color: red; } 
@@ -44,6 +44,8 @@ body{
         75% { border-color: yellow; } 
         100% { border-color: red; } 
     }
+
+
 .details{
     width: 100%;
 }
@@ -64,6 +66,7 @@ body{
     background-color: var(--teal);
     border-radius: 10px;
     transition: all 0.3 ease;
+
     animation: colorChange 5s infinite;
 }
 
