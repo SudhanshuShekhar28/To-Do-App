@@ -29,5 +29,12 @@
         <ul id="task-list" class="task-list"></ul>
     </div>
     <script src="app.js"></script>
+    <script> document.getElementById('newTask').addEventListener('click', function() { 
+        this.classList.add('vibrate'); 
+        setTimeout(() => { 
+            this.classList.remove('vibrate'); 
+        }, 300); // Duration of the vibration animation 
+        }); 
+    </script>
 </body>
 </html>
