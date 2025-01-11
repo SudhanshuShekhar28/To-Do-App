@@ -160,6 +160,18 @@ button{
     100% { border-color: #FF5733; } /* Orange */ 
 }
 
+ 
+@keyframes vibrate { 
+    0% { transform: translate(0); } 
+    25% { transform: translate(-2px, 2px); } 
+    50% { transform: translate(2px, -2px); } 
+    75% { transform: translate(-2px, -2px); } 
+    100% { transform: translate(2px, 2px); } 
+} 
+.vibrate { 
+    animation: vibrate 0.3s linear; 
+}
+
 
 .task.completed{
     text-decoration: line-through;
