@@ -16,6 +16,15 @@
 body{
     background-color: var(--background);
     color: var(--text);
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 50px;
+    width:100%;
+    height:90vh;
+    background-image: url(https://wallpaperaccess.com/full/1504491.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -53,16 +62,18 @@ body{
 
 #progressBar{
     width: 100%;
-    height: 10px;
+    height: 12px;
     background-color: var(--secondaryBackground);
     border-radius: 5px;
     margin-top: 20px;
+    overflow: hidden;
+    position: relative;
 }
 
 
 #progress {
     width: 0%;
-    height: 10px;
+    height: 12px;
     background-color: var(--teal);
     border-radius: 10px;
     transition: all 0.3 ease;
@@ -76,6 +87,15 @@ body{
     50% { background-color: skyblue; }
     75% { background-color: teal; }
     100% { background-color: turquoise; }
+}
+
+#percentage { 
+    position: absolute; 
+    top: 0; left: 50%; 
+    transform: translateX(-50%); 
+    color: white; 
+    font-weight: bold; 
+    font-size: 12px;
 }
 
 #numbers{
