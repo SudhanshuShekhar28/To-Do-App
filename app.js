@@ -19,7 +19,7 @@ const toggleTaskComplete = (index) => {
 };
 
 const deleteTask = (index) => {
-    tasks.splice(index, 1); // Corrected the parameter here
+    tasks.splice(index, 1);
     updateTasksList();
     updateStats();
 };
@@ -36,12 +36,14 @@ const editTask = (index) => {
 const updateStats = () => {
     const completedTasks = tasks.filter(task => task.completed).length;
     const totalTasks = tasks.length;
-    const progress = (completedTasks / totalTasks) * 100;
+    const progress = totalTasks === 0 ? 0 : (completedTasks / totalTasks) * 100;
     const progressBar = document.getElementById("progress");
     progressBar.style.width = `${progress}%`;
 
     document.getElementById("numbers").innerHTML = `${completedTasks} / ${totalTasks}`;
+    document.getElementById("percentage").innerHTML = `${Math.round(progress)}%`;
 };
+
 
 const updateTasksList = () => {
     const taskList = document.getElementById("task-list");
